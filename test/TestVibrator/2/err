@@ -1,0 +1,8 @@
+vibrator_c.cpp: In function 'void vibrator_c(char*, bool)':
+vibrator_c.cpp:74:41: error: 'class iofc' has no member named 'MatCutByLayer'
+  vector<vector<int> > atominLayer = ifc.MatCutByLayer(mfc)
+                                         ^
+vibrator_c.cpp:78:70: error: 'nk' was not declared in this scope
+  vector<vector<vector<vector<vector<complex<double> > > > > >mfcbylz(nk,
+                                                                      ^
+make: *** [vibrator_c.o] Error 1

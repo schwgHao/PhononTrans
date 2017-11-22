@@ -1,0 +1,26 @@
+ioFC.cpp: In member function 'void iofc::kp2dinit()':
+ioFC.cpp:96:26: error: base operand of '->' has non-pointer type 'const std::pair<double, double>'
+   kpt.push_back({i->first->first, i->first->second, i->second});
+                          ^
+ioFC.cpp:96:43: error: base operand of '->' has non-pointer type 'const std::pair<double, double>'
+   kpt.push_back({i->first->first, i->first->second, i->second});
+                                           ^
+ioFC.cpp:96:63: error: no matching function for call to 'std::vector<std::vector<double> >::push_back(<brace-enclosed initializer list>)'
+   kpt.push_back({i->first->first, i->first->second, i->second});
+                                                               ^
+ioFC.cpp:96:63: note: candidates are:
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/vector:64:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/random.h:34,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/random:50,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algo.h:65,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/algorithm:62,
+                 from ioFC.cpp:5:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:901:7: note: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::vector<double>; _Alloc = std::allocator<std::vector<double> >; std::vector<_Tp, _Alloc>::value_type = std::vector<double>]
+       push_back(const value_type& __x)
+       ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:901:7: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'const value_type& {aka const std::vector<double>&}'
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:919:7: note: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = std::vector<double>; _Alloc = std::allocator<std::vector<double> >; std::vector<_Tp, _Alloc>::value_type = std::vector<double>]
+       push_back(value_type&& __x)
+       ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:919:7: note:   no known conversion for argument 1 from '<brace-enclosed initializer list>' to 'std::vector<std::vector<double> >::value_type&& {aka std::vector<double>&&}'
+make: *** [ioFC.o] Error 1

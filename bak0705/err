@@ -1,0 +1,12 @@
+In file included from CalcPhEMT.cpp:3:0:
+EMsolver.h:19:2: warning: unused parameter 'mfc_' [-Wunused-parameter]
+  emsolver(const vector<vector<vector<complex<double> > > >& mfc_,
+  ^
+CalcPhEMT.cpp: In function 'void CalcPhEMT(std::string, const std::vector<double>&, double)':
+CalcPhEMT.cpp:37:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < kp2d.size(); i++){
+                               ^
+vibrator_c.cpp: In function 'void vibrator_c(char*, bool)':
+vibrator_c.cpp:11:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i < omg.size(); i++)
+                              ^

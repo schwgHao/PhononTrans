@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Ang2m	./constants.h	/^double Ang2m = 1.0e-10;$/;"	v
+CALCPHEMT_H_	./CalcPhEMT.h	2;"	d
+CONSTANTS_H_	./constants.h	2;"	d
+CalcPhEMT	./CalcPhEMT.cpp	/^void CalcPhEMT(string slabel, const vector<double>& omg, double delta){$/;"	f
+CalcPhLead	./CalcPhLead.cpp	/^void CalcPhLead(string slabel, const vector<double>& omg, double delta){$/;"	f
+DR00	./SurfacePhononGF.cpp	/^void surfphGF::DR00(MatrixXcd t0, MatrixXcd t0t, MatrixXcd& Tph){$/;"	f	class:surfphGF
+DR00	./SurfacePhononGF.cpp	/^void surfphGF::DR00(v4cd& d00r){$/;"	f	class:surfphGF
+DRCC	./EMsolver.cpp	/^void emsolver::DRCC(vector<vector<vector<vector<complex<double> > > > >& dccr, $/;"	f	class:emsolver
+EMSOLVER_H_	./EMsolver.h	2;"	d
+FUNCUTIL_H_	./FuncUtils.h	2;"	d
+IOFC_H_	./ioFC.h	2;"	d
+KCInd	./EMsolver.h	/^	vector<int> KCInd;$/;"	m	class:emsolver
+KLmInd	./EMsolver.h	/^	vector<int> KLmInd;$/;"	m	class:emsolver
+KLpInd	./EMsolver.h	/^	vector<int> KLpInd;$/;"	m	class:emsolver
+MatCutbyLayer	./ioFC.cpp	/^vector<vector<int> > iofc::MatCutbyLayer(){$/;"	f	class:iofc
+Nat	./ioFC.h	/^	int Nat(){return na;}$/;"	f	class:iofc
+OBJS	./Makefile	/^OBJS=vibrator_c.o CalcPhLead.o CalcPhEMT.o EMsolver.o ioFC.o\\$/;"	m
+ReadFC	./ioFC.cpp	/^void iofc::ReadFC(vector<vector<vector<complex<double> > > >& mfc){$/;"	f	class:iofc
+SRCpath	./Makefile	/^SRCpath=..\/..\/Src$/;"	m
+SURF_P_GF	./SurfacePhononGF.h	22;"	d
+amu2kg	./constants.h	/^double amu2kg = 1.660539040*1.0e-27;$/;"	v
+cell	./ioFC.h	/^	vector<vector<double> > cell;$/;"	m	class:iofc
+cellLz	./ioFC.h	/^	double cellLz;$/;"	m	struct:setleads
+d00r	./ioFC.h	/^	v4cd d00r;$/;"	m	struct:setleads
+delta	./EMsolver.h	/^	double delta;$/;"	m	class:emsolver
+delta	./SurfacePhononGF.h	/^	double delta;$/;"	m	class:surfphGF
+doubpredicate	./CalcPhEMT.cpp	/^bool doubpredicate(double i, double j){$/;"	f
+e	./constants.h	/^double e = 1.6021766208*1.0e-19;$/;"	v
+emsolver	./EMsolver.h	/^	emsolver(vector<vector<vector<complex<double> > > > mfc_,$/;"	f	class:emsolver
+emsolver	./EMsolver.h	/^class emsolver{$/;"	c
+floatlessthan	./ioFC.cpp	/^struct floatlessthan{$/;"	s	file:
+hbar	./constants.h	/^double hbar = 4.13566743*1.0e-15\/2.0\/pi; \/\/ in units of eV*s$/;"	v
+iofc	./ioFC.cpp	/^iofc::iofc(string slabel_, bool isBulk_):slabel(slabel_), isBulk(isBulk_){$/;"	f	class:iofc
+iofc	./ioFC.h	/^class iofc{$/;"	c
+isBulk	./ioFC.h	/^	bool isBulk;$/;"	m	class:iofc
+kp	./EMsolver.h	/^	vector<vector<double> > kp;$/;"	m	class:emsolver
+kp	./ioFC.h	/^	vector<vector<double> > kp;$/;"	m	class:iofc
+kp	./ioFC.h	/^	vector<vector<double> > kp;$/;"	m	struct:setleads
+kp2D	./ioFC.h	/^	vector<vector<double> > kp2D;$/;"	m	class:iofc
+kp2d	./ioFC.h	/^	vector<vector<double> > kp2d(){return kp2D;}$/;"	f	class:iofc
+kp2dinit	./ioFC.cpp	/^void iofc::kp2dinit(){$/;"	f	class:iofc
+libbindC	./CfuncDef.f90	/^module libbindC$/;"	m
+mcopy	./FuncUtils.h	/^void mcopy(T* a, size_t n1, size_t n2, vector<vector<T> >& vec){	$/;"	f
+mfc	./EMsolver.h	/^	vector<vector<vector<complex<double> > > > mfc;$/;"	m	class:emsolver
+mfcSlice	./ioFC.cpp	/^void iofc::mfcSlice(vector<vector<vector<vector<vector<complex<double> > > > > >& mfcbylz, $/;"	f	class:iofc
+mfcbylz	./SurfacePhononGF.h	/^	v5cd mfcbylz;$/;"	m	class:surfphGF
+na	./ioFC.h	/^	int na;$/;"	m	class:iofc
+nlayers	./ioFC.h	/^	int nlayers;$/;"	m	struct:setleads
+nsc	./ioFC.h	/^	vector<int> nsc;$/;"	m	class:iofc
+omg	./EMsolver.h	/^	vector<double> omg;$/;"	m	class:emsolver
+omgv	./SurfacePhononGF.h	/^	vector<double> omgv;$/;"	m	class:surfphGF
+operator ()	./ioFC.cpp	/^	bool operator()(const double& l, const double& r){$/;"	f	struct:floatlessthan
+outermost	./ioFC.h	/^	double outermost(){return cell[2][2];}$/;"	f	class:iofc
+pi	./constants.h	/^double pi = 3.141592653589793;$/;"	v
+scell	./ioFC.h	/^	vector<vector<double> > scell;$/;"	m	class:iofc
+setBoundary	./ioFC.cpp	/^void iofc::setBoundary(double cllft, double clrt, int nlrt,$/;"	f	class:iofc
+setleads	./ioFC.cpp	/^setleads::setleads(string ssl){$/;"	f	class:setleads
+setleads	./ioFC.h	/^struct setleads{$/;"	s
+slabel	./ioFC.h	/^	string slabel;$/;"	m	class:iofc
+strTolower	./FuncUtils.cpp	/^string strTolower(const string& str){$/;"	f
+strToupper	./FuncUtils.cpp	/^string strToupper(const string& str){$/;"	f
+strsplit	./FuncUtils.cpp	/^vector<string> strsplit(const string& str, string pat){$/;"	f
+surfphGF	./SurfacePhononGF.h	/^	surfphGF(v5cd mfcbylz_, vector<double> omgv_, double delta_) $/;"	f	class:surfphGF
+surfphGF	./SurfacePhononGF.h	/^class surfphGF{$/;"	c
+v4cd	./SurfacePhononGF.h	/^typedef vector<vector<vector<vector<complex<double> > > > > v4cd;$/;"	t
+v4cd	./ioFC.h	/^typedef vector<vector<vector<vector<complex<double> > > > > v4cd;$/;"	t
+v5cd	./SurfacePhononGF.h	/^typedef vector<vector<vector<vector<vector<complex<double> > > > > > v5cd;$/;"	t
+vibrator_c	./vibrator_c.cpp	/^void vibrator_c(char* slabel_, bool Isbulk,$/;"	f
+writeDR00	./SurfacePhononGF.cpp	/^void surfphGF::writeDR00(string ssgf, double cellLz, int nlayers, $/;"	f	class:surfphGF
+writeTRC	./EMsolver.cpp	/^void emsolver::writeTRC(const string& strs, vector<vector<complex<double> > >& vibTRCoverk){$/;"	f	class:emsolver
+writensc	./writensc.cpp	/^void writensc(char* slabel_, int nsc[], bool isbulk){$/;"	f
+xa	./ioFC.h	/^	vector<vector<double> > xa;$/;"	m	class:iofc
+xmass	./ioFC.h	/^	vector<int> xmass;$/;"	m	class:iofc

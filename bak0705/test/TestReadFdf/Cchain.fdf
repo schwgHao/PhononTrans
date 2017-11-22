@@ -1,0 +1,52 @@
+SystemName          Cchain
+SystemLabel         Cchain
+NumberOfSpecies     1
+
+%block ChemicalSpeciesLabel
+ 1  6   C      # Species index, atomic number, species label
+%endblock ChemicalSpeciesLabel
+
+%block PAO.Basis       #PHYSICAL REVIEW B 79, 0754412009
+C     3      0.01
+ n=2    0    2   P   1    E     69.86      4.8
+   6.004   4.195
+   1.000   1.000
+ n=2    1    2   P   1    E     18.95      3.78
+   4.995   3.100
+   1.000   1.000
+ n=3    2    1   E     16.84      0.05
+   4.187
+   1.000
+%endblock PAO.Basis
+
+AtomCoorFormatOut        Ang
+
+%block kgrid_Monkhorst_Pack
+     1     0     0          0.0
+     0     1     0          0.0
+     0     0     1         0.0
+%endblock kgrid_Monkhorst_Pack
+
+xc.functional          GGA
+xc.authors             PBE
+
+#####SCF#####
+MaxSCFIterations       600
+DM.MixingWeight        0.02
+DM.NumberPulay         10
+DM.MixSCF1             F                 #True for restart
+DM.Tolerance           1.0E-4
+
+SpinPolarized          F
+FixSpin                F
+
+SolutionMethod         diagon            #OrderN for 100 atoms per unitcell
+ElectronicTemperature  300      K
+
+MeshCutoff             300.00   Ry
+
+WriteCoorStep          T
+WriteMullikenPop       1
+WriteForces            T
+
+%include FC.fdf

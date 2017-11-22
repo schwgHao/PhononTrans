@@ -1,0 +1,1310 @@
+Slice Supercell
+i, j 0 0
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (1.2,0) 
+
+i, j 0 1
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (-0.6,0) 
+
+i, j 1 0
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (-0.6,0) 
+
+i, j 1 1
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (0,0) 
+(0,0) (0,0) (1.2,0) 
+
+*********************************************
+Solve surface phonon green's function iteratively.
+*********************************************
+o, omg[o] 0 1.2
+step: 0
+Tphtnext: 
+           (0,0)            (0,0)            (0,0)
+           (0,0)            (0,0)            (0,0)
+           (0,0)            (0,0) (6.25,-1.25e-06)
+step: 7
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 14
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 21
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 28
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 35
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 42
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 49
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 56
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 63
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 70
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 77
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 84
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 91
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 98
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 105
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 112
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 119
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 126
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 133
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 140
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 147
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 154
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 161
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 168
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 175
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 182
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 189
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 196
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 203
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 210
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 217
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 224
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 231
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 238
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 245
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 252
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 259
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 266
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 273
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 280
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 287
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 294
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 301
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 308
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 315
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 322
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 329
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 336
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 343
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 350
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 357
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 364
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 371
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 378
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 385
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 392
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 399
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 406
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 413
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 420
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 427
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 434
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 441
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 448
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 455
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 462
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 469
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 476
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 483
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 490
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 497
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 504
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 511
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 518
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 525
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 532
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 539
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 546
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 553
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 560
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 567
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 574
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 581
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 588
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 595
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 602
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 609
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 616
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 623
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 630
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 637
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 644
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 651
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 658
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 665
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 672
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 679
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 686
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 693
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 700
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 707
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 714
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 721
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 728
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 735
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 742
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 749
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 756
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 763
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 770
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 777
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 784
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 791
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 798
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 805
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 812
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 819
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 826
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 833
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 840
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 847
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 854
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 861
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 868
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 875
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 882
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 889
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 896
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 903
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 910
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 917
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 924
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 931
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 938
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 945
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 952
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 959
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 966
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 973
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 980
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 987
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 994
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1001
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1008
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1015
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1022
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1029
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1036
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1043
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1050
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1057
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1064
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1071
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1078
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1085
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1092
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1099
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1106
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1113
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1120
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1127
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1134
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1141
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1148
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1155
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1162
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1169
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1176
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1183
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1190
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1197
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1204
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1211
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1218
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1225
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1232
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1239
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1246
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1253
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1260
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1267
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1274
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1281
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1288
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1295
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1302
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1309
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1316
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1323
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1330
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1337
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1344
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1351
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1358
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1365
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1372
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1379
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1386
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1393
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1400
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1407
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1414
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1421
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1428
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1435
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1442
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1449
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1456
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1463
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1470
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1477
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1484
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1491
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1498
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1505
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1512
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1519
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1526
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1533
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1540
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1547
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1554
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1561
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1568
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1575
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1582
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1589
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1596
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1603
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1610
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1617
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1624
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1631
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1638
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1645
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1652
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1659
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1666
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1673
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1680
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1687
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1694
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1701
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1708
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1715
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1722
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1729
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1736
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1743
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1750
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1757
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1764
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1771
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1778
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+step: 1785
+Tphtnext: 
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+(-nan,-nan) (-nan,-nan) (-nan,-nan)
+step: 1792
+Tphtnext: 
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)
+(nan,nan) (nan,nan) (nan,nan)

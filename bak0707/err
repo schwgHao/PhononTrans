@@ -1,0 +1,191 @@
+In file included from EMsolver.cpp:6:0:
+interp_1d.h: In member function 'Int Base_interp::locate(Doub)':
+interp_1d.h:40:9: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+   if (x >= xx[jm] == ascnd)
+         ^
+interp_1d.h: In member function 'Int Base_interp::hunt(Doub)':
+interp_1d.h:58:9: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+   if (x >= xx[jl] == ascnd) {
+         ^
+interp_1d.h:62:16: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+     else if (x < xx[ju] == ascnd) break;
+                ^
+interp_1d.h:73:16: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+     else if (x >= xx[jl] == ascnd) break;
+                ^
+interp_1d.h:83:9: warning: suggest parentheses around comparison in operand of '==' [-Wparentheses]
+   if (x >= xx[jm] == ascnd)
+         ^
+interp_1d.h: At global scope:
+interp_1d.h:263:6: warning: unused parameter 'jl' [-Wunused-parameter]
+ Doub BaryRat_interp::rawinterp(Int jl, Doub x)
+      ^
+EMsolver.cpp: In member function 'void emsolver::DRCC(std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >&, std::vector<std::vector<std::complex<double> > >&, std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >&, std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >&, const std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >&, const std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >&)':
+EMsolver.cpp:25:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int k = 0; k < kp.size(); k++){
+                             ^
+EMsolver.cpp:26:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int o = 0; o < omg.size(); o++){
+                               ^
+EMsolver.cpp:63:23: error: no match for 'operator-' (operand types are 'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' and 'const AdjointReturnType {aka const Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >}')
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                       ^
+EMsolver.cpp:63:23: note: candidates are:
+In file included from /home/wh/usr/local/eigen3.3.3/Eigen/Core:72:0,
+                 from /home/wh/usr/local/eigen3.3.3/Eigen/Dense:1,
+                 from EMsolver.cpp:4:
+/home/wh/usr/local/eigen3.3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:237:1: note: template<class T> typename Eigen::internal::enable_if<true, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<typename Eigen::internal::promote_scalar_arg<long int, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, long int, Eigen::internal::scalar_difference_op<T, long int> > >::value>::type, long int>, const typename Eigen::internal::plain_constant_type<Eigen::Array<long int, 1, -1>, typename Eigen::internal::promote_scalar_arg<long int, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, long int, Eigen::internal::scalar_difference_op<T, long int> > >::value>::type>::type, const Eigen::Array<long int, 1, -1> > >::type Eigen::operator-(const T&, const StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BINARY_OP(operator-,difference)
+ ^
+/home/wh/usr/local/eigen3.3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:237:1: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   cannot convert 'Eigen::MatrixBase<Derived>::adjoint() const [with Derived = Eigen::Matrix<std::complex<double>, -1, -1>; Eigen::MatrixBase<Derived>::AdjointReturnType = Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >]()' (type 'const AdjointReturnType {aka const Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >}') to type 'const StorageBaseType& {aka const Eigen::ArrayBase<Eigen::Array<long int, 1, -1> >&}'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/eigen3.3.3/Eigen/Core:72:0,
+                 from /home/wh/usr/local/eigen3.3.3/Eigen/Dense:1,
+                 from EMsolver.cpp:4:
+/home/wh/usr/local/eigen3.3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:237:1: note: template<class T> typename Eigen::internal::enable_if<true, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<typename Eigen::internal::promote_scalar_arg<long int, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, long int, Eigen::internal::scalar_difference_op<T, long int> > >::value>::type, long int>, const typename Eigen::internal::plain_constant_type<Eigen::Ref<Eigen::Array<long int, 1, -1> >, typename Eigen::internal::promote_scalar_arg<long int, T, Eigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<T, long int, Eigen::internal::scalar_difference_op<T, long int> > >::value>::type>::type, const Eigen::Ref<Eigen::Array<long int, 1, -1> > > >::type Eigen::operator-(const T&, const StorageBaseType&)
+ EIGEN_MAKE_SCALAR_BINARY_OP(operator-,difference)
+ ^
+/home/wh/usr/local/eigen3.3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:237:1: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   cannot convert 'Eigen::MatrixBase<Derived>::adjoint() const [with Derived = Eigen::Matrix<std::complex<double>, -1, -1>; Eigen::MatrixBase<Derived>::AdjointReturnType = Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >]()' (type 'const AdjointReturnType {aka const Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >}') to type 'const StorageBaseType& {aka const Eigen::ArrayBase<Eigen::Ref<Eigen::Array<long int, 1, -1> > >&}'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from EMsolver.h:7:0,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:449:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x)
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:449:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::complex<_Tp>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from EMsolver.h:7:0,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:372:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)
+     operator-(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:372:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'const AdjointReturnType {aka const Eigen::CwiseUnaryOp<Eigen::internal::scalar_conjugate_op<std::complex<double> >, const Eigen::Transpose<const Eigen::Matrix<std::complex<double>, -1, -1> > >}' is not derived from 'const std::complex<_Tp>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from EMsolver.h:7:0,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:363:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)
+     operator-(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:363:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::complex<_Tp>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from EMsolver.h:7:0,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:354:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/complex:354:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::complex<_Tp>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/vector:65:0,
+                 from EMsolver.h:5,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_bvector.h:208:3: note: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from 'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' to 'const std::_Bit_iterator_base&'
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:1111:5: note: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator-(const move_iterator<_Iterator>& __x,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:1111:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::move_iterator<_Iterator>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:1104:5: note: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:1104:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::move_iterator<_Iterator>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:379:5: note: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:379:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::reverse_iterator<_Iterator>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:327:5: note: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:327:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const std::reverse_iterator<_Iterator>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:896:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:67:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from EMsolver.h:4,
+                 from EMsolver.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:884:5: note: template<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_iterator.h:884:5: note:   template argument deduction/substitution failed:
+EMsolver.cpp:63:41: note:   'std::vector<std::vector<std::vector<std::vector<std::complex<double> > > > >' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+    ifs << SelfEngLeadL-SelfEngL.adjoint();
+                                         ^
+EMsolver.cpp: In member function 'void emsolver::writePhTRC(const string&, const std::vector<std::vector<std::complex<double> > >&)':
+EMsolver.cpp:139:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int k = 0; k < kp.size(); k++)
+                              ^
+EMsolver.cpp:156:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int tp = 0; tp < bathT.size(); tp++){
+                                  ^
+EMsolver.cpp:132:15: warning: unused variable 'hbar' [-Wunused-variable]
+  const double hbar = 6.582119144686551e-16; // in units of eV*s
+               ^
+make: *** [EMsolver.o] Error 1

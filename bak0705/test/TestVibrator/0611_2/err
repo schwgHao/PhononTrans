@@ -1,0 +1,18 @@
+SurfacePhononGF.cpp: In member function 'void surfphGF::DR00(Eigen::MatrixXcd, Eigen::MatrixXcd, Eigen::MatrixXcd&)':
+SurfacePhononGF.cpp:41:48: error: no matching function for call to 'Eigen::Matrix<std::complex<double>, -1, -1>::Identity(Eigen::Index)'
+  MatrixXcd Iden = MatrixXcd::Identity(t0.rows());
+                                                ^
+SurfacePhononGF.cpp:41:48: note: candidates are:
+In file included from /home/wh/usr/local/eigen3.3.3/Eigen/Core:442:0,
+                 from /home/wh/usr/local/eigen3.3.3/Eigen/Dense:1,
+                 from SurfacePhononGF.h:13,
+                 from SurfacePhononGF.cpp:1:
+/home/wh/usr/local/eigen3.3.3/Eigen/src/Core/CwiseNullaryOp.h:700:1: note: static const IdentityReturnType Eigen::MatrixBase<Derived>::Identity() [with Derived = Eigen::Matrix<std::complex<double>, -1, -1>; Eigen::MatrixBase<Derived>::IdentityReturnType = Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<std::complex<double> >, Eigen::Matrix<std::complex<double>, -1, -1> >; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<std::complex<double>, -1, -1>; typename Eigen::internal::traits<T>::Scalar = std::complex<double>]
+ MatrixBase<Derived>::Identity()
+ ^
+/home/wh/usr/local/eigen3.3.3/Eigen/src/Core/CwiseNullaryOp.h:700:1: note:   candidate expects 0 arguments, 1 provided
+/home/wh/usr/local/eigen3.3.3/Eigen/src/Core/CwiseNullaryOp.h:683:1: note: static const IdentityReturnType Eigen::MatrixBase<Derived>::Identity(Eigen::Index, Eigen::Index) [with Derived = Eigen::Matrix<std::complex<double>, -1, -1>; Eigen::MatrixBase<Derived>::IdentityReturnType = Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<std::complex<double> >, Eigen::Matrix<std::complex<double>, -1, -1> >; typename Eigen::DenseBase<Derived>::PlainObject = Eigen::Matrix<std::complex<double>, -1, -1>; typename Eigen::internal::traits<T>::Scalar = std::complex<double>; Eigen::Index = long int]
+ MatrixBase<Derived>::Identity(Index rows, Index cols)
+ ^
+/home/wh/usr/local/eigen3.3.3/Eigen/src/Core/CwiseNullaryOp.h:683:1: note:   candidate expects 2 arguments, 1 provided
+make: *** [SurfacePhononGF.o] Error 1

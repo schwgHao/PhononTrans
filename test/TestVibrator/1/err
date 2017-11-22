@@ -1,0 +1,33 @@
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/char_traits.h:39:0,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:40,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ostream:38,
+                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/iostream:39,
+                 from vibrator.cpp:1:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h: In instantiation of 'static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = double*; _OI = std::vector<double>*]':
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:390:70:   required from '_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = double*; _OI = std::vector<double>*]'
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:428:38:   required from '_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = double*; _OI = __gnu_cxx::__normal_iterator<std::vector<double>*, std::vector<std::vector<double> > >]'
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:460:17:   required from '_OI std::copy(_II, _II, _OI) [with _II = double*; _OI = __gnu_cxx::__normal_iterator<std::vector<double>*, std::vector<std::vector<double> > >]'
+vibrator.cpp:54:49:   required from here
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:335:18: error: no match for 'operator=' (operand types are 'std::vector<double>' and 'double')
+        *__result = *__first;
+                  ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_algobase.h:335:18: note: candidates are:
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/vector:69:0,
+                 from ioFC.h:5,
+                 from vibrator.cpp:3:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/vector.tcc:160:5: note: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = double; _Alloc = std::allocator<double>]
+     vector<_Tp, _Alloc>::
+     ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/vector.tcc:160:5: note:   no known conversion for argument 1 from 'double' to 'const std::vector<double>&'
+In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/vector:64:0,
+                 from ioFC.h:5,
+                 from vibrator.cpp:3:
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:439:7: note: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = double; _Alloc = std::allocator<double>]
+       operator=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:439:7: note:   no known conversion for argument 1 from 'double' to 'std::vector<double>&&'
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:461:7: note: std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = double; _Alloc = std::allocator<double>]
+       operator=(initializer_list<value_type> __l)
+       ^
+/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/stl_vector.h:461:7: note:   no known conversion for argument 1 from 'double' to 'std::initializer_list<double>'
+make: *** [vibrator.o] Error 1
