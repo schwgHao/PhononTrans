@@ -30,7 +30,7 @@ public:
 		: mfcbylz(mfcbylz_), omgv(omgv_), delta(delta_){}
 	void DR00(v4cd& d00r);
 	void DR00(Eigen::MatrixXcd t0, Eigen::MatrixXcd t0t, Eigen::MatrixXcd Tphnext, Eigen::MatrixXcd& Tph);
-	void writeDR00(std::string ssgf, double cellLz, int nlayers,
+	void writeDR00(std::string ssgf, double cellLz, int naAtOnelayer,
 				   const std::vector<std::vector<double> >& kp2d, 
 				   const v4cd& d00r);
 	void DeciTech(Eigen::MatrixXcd& K0, Eigen::MatrixXcd& K0s, 

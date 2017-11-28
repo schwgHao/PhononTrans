@@ -8,8 +8,8 @@ module libbindC
             implicit none
             character(c_char) :: slabel(*)
             integer(c_int) :: nsc(3)
-            integer(c_int),value  :: ia1, ia2
-            logical(c_bool),value :: isbulk
+            integer(c_int),value  :: ia1, ia2, isbulk
+!            logical(c_bool),value :: isbulk
         end subroutine
         
         subroutine vibrator_c(slabel, isbulk, Enli, Enlf, &
@@ -17,9 +17,9 @@ module libbindC
             use iso_c_binding
             implicit none
             character(c_char) :: slabel(*)
-            logical(c_bool),value :: isbulk
+ !           logical(c_bool),value :: isbulk
             real(c_double),value :: Enli, Enlf, Delta, bathTemp1, bathTemp2
-            integer(c_int),value :: Nenl, Ntemp
+            integer(c_int),value :: Nenl, Ntemp, isbulk
         end subroutine
     end interface
 
