@@ -35,7 +35,7 @@ public:
 				   const v4cd& d00r);
 	void DeciTech(Eigen::MatrixXcd& K0, Eigen::MatrixXcd& K0s, 
 		          Eigen::MatrixXcd& K1, Eigen::MatrixXcd& K2, Eigen::MatrixXcd Iden);
-	void DeciTech(std::map<std::string, Eigen::MatrixXcd>& mM, std::map<std::string, Eigen::MatrixXcd> mMpre, std::map<std::string, Eigen::MatrixXcd> mFpre, std::map<std::string, std::pair<std::queue<Eigen::MatrixXcd>, std::queue<Eigen::MatrixXcd> > >& mq, const Eigen::MatrixXcd& vFrq, const double alpha, const size_t exFreq, const size_t nStep, size_t step);
+	bool DeciTech(std::map<std::string, Eigen::MatrixXcd>& mM, std::map<std::string, Eigen::MatrixXcd> mMpre, std::map<std::string, Eigen::MatrixXcd> mFpre, std::map<std::string, std::pair<std::queue<Eigen::MatrixXcd>, std::queue<Eigen::MatrixXcd> > >& mq, const Eigen::MatrixXcd& vFrq, const double alpha, const size_t exFreq, const size_t nStep, size_t step);
 private:
 	v5cd mfcbylz;
 	std::vector<double> omgv;

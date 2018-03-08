@@ -9,7 +9,7 @@ using std::string;
 using std::vector;
 using std::complex;
 
-class iofc{
+struct iofc{
 public:
 //	iofc(string slabel_, int* nsc_, 
 //			vector<vector<double> >kp_,
@@ -31,9 +31,9 @@ public:
 				  vector<vector<vector<complex<double> > > > mfc,
 				  vector<vector<int> > atominLayer);
 	double outermost(){return cell[2][2];}
-	void setBoundary(double cllft, double clrt, int nlrt,
-			vector<int>& KLm, vector<int>&KLp, vector<int>& KC);
-private:
+	void setBoundary(double cllft, double clrt, int nlrt, vector<int>& KLm, vector<int>&KLp, vector<int>& KC);
+    void setBoundary(int naAtOnelayer_l, int naAtOnelayer_r, vector<int>& KLm, vector<int>&KLp, vector<int>& KC);
+public:
 	string slabel;
 	bool isBulk;
 	int na;
@@ -52,7 +52,7 @@ typedef vector<vector<vector<vector<complex<double> > > > > v4cd;
 
 struct setleads{
 	double cellLz;
-	int nlayers;
+	int naAtOnelayer;
 	vector<vector<double> > kp;
 	v4cd d00r;
 	setleads(string ssl);

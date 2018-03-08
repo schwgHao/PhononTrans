@@ -12,12 +12,12 @@ module libbindC
             logical(c_bool),value :: isbulk
         end subroutine
         
-        subroutine vibrator_c(slabel, isbulk, Enli, Enlf, &
+        subroutine vibrator_c(slabel, isbulk, vibDecayRate, Enli, Enlf, &
         Nenl, Delta, bathTemp1, bathTemp2, Ntemp) bind(c, name="vibrator_c")
             use iso_c_binding
             implicit none
             character(c_char) :: slabel(*)
-            logical(c_bool),value :: isbulk
+            logical(c_bool),value :: isbulk, vibDecayRate
             real(c_double),value :: Enli, Enlf, Delta, bathTemp1, bathTemp2
             integer(c_int),value :: Nenl, Ntemp
         end subroutine

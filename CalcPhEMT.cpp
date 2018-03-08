@@ -12,7 +12,7 @@ bool doubpredicate(double i, double j){
 	return (fabs(i - j) < 1.0e-6);	
 }
 
-void CalcPhEMT(string slabel, const vector<double>& omg, double delta, const vector<double>& bathT){
+void CalcPhEMT(string slabel, bool vibDecayRate, const vector<double>& omg, double delta, const vector<double>& bathT){
 	iofc ifc(slabel, false);
 	int natoms = ifc.Nat();
 /* Read force constant matrix */	
@@ -22,14 +22,12 @@ void CalcPhEMT(string slabel, const vector<double>& omg, double delta, const vec
 
 //	iofc ifc(slabel, nsc, kp, xa, xmass, cell, scell);
 	ifc.ReadFC(mfc);
-	std::cout << "where i am "<< std::endl;	
 	setleads Llft("bulksgf.lft");
 	setleads Lrt("bulksgf.rt");
 	
-	std::cout << "where i am "<< std::endl;	
 	double cllft = Llft.cellLz;
 	double clrt = Lrt.cellLz;
-	int nlrt = Lrt.nlayers;
+//	int nlrt = Lrt.nlayers;
 	vector<vector<double> > kp2d = ifc.kp2d();
 	vector<vector<double> > kplft = Llft.kp;
 	vector<vector<double> > kprt = Lrt.kp;
@@ -46,15 +44,18 @@ void CalcPhEMT(string slabel, const vector<double>& omg, double delta, const vec
 //			abort();
 //		}
 //	}
-	std::cout << "where i am "<< std::endl;	
 	
 	v4cd d00rl = Llft.d00r;
 	v4cd d00rr = Llft.d00r;
 	vector<int> KLmInd, KLpInd, KCInd;
-	std::cout << "set Boundary"<<std::endl;
-	ifc.setBoundary(cllft, clrt, nlrt, KLmInd, KLpInd, KCInd);
-	emsolver ems(mfc, KLmInd, KLpInd, KCInd, kp2d, omg, delta, bathT);
-	vector<vector<vector<vector<complex<double> > > > > dccr(kp2d.size(),
+//	std::cout << "set Boundary"<<std::endl;
+
+    //	ifc.setBoundary(cllft, clrt, nlrt, KLmInd, KLpInd, KCInd);
+//    std::cout << "naAtOnelayer" << Llft.naAtOnelayer << std::endl;
+    ifc.setBoundary(Llft.naAtOnelayer, Lrt.naAtOnelayer, KLmInd, KLpInd, KCInd);
+	emsolver ems(slabel, mfc, KLmInd, KLpInd, KCInd, kp2d, omg, delta, bathT);
+
+    vector<vector<vector<vector<complex<double> > > > > dccr(kp2d.size(),
 		   vector<vector<vector<complex<double> > > > (omg.size(),
 		          vector<vector<complex<double> > > (3*KCInd.size(),
 				         vector<complex<double> > (3*KCInd.size(), 0.0))));
@@ -62,7 +63,13 @@ void CalcPhEMT(string slabel, const vector<double>& omg, double delta, const vec
 	auto SelfEngLeadL = dccr;
 	auto SelfEngLeadR = dccr;
 	
-	vector<vector<complex<double> > > vibTRC(kp2d.size(),
+	if(vibDecayRate){
+        std::cout << "CalcPhEMT: calculate decay rate of locate vibration" << std::endl;
+        ems.vibProj(d00rl, d00rr);
+        return;
+    }
+    
+    vector<vector<complex<double> > > vibTRC(kp2d.size(),
 		   vector<complex<double> > (omg.size(), 0.0));
 		
 	ems.DRCC(dccr, vibTRC, SelfEngLeadL, SelfEngLeadR, d00rl, d00rr);

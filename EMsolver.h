@@ -16,31 +16,33 @@ using std::complex;
 
 class emsolver{
 public:
-	emsolver(vector<vector<vector<complex<double> > > > mfc_,
-			vector<int> klmi_, vector<int> klpi_, vector<int> kci_, 
-			vector<vector<double> > kp_,
-			vector<double> omg_, double delta_, 
-			vector<double> bathT_):
-			mfc(mfc_), KLmInd(klmi_), KLpInd(klpi_), KCInd(kci_),
-			kp(kp_), omg(omg_), delta(delta_), bathT(bathT_){};
-	void DRCC(vector<vector<vector<vector<complex<double> > > > >& dccr, 
-			  vector<vector<complex<double> > >& VibTRCOverk,
-			  vector<vector<vector<vector<complex<double> > > > >& SelfEngLeadL, 
-			  vector<vector<vector<vector<complex<double> > > > >& SelfEngLeadR,
-			  const vector<vector<vector<vector<complex<double> > > > >& d00rl, 
-			  const vector<vector<vector<vector<complex<double> > > > >& d00rr);
-	
-	void writePhTRC(const string& strs, const vector<vector<complex<double> > >& vibTRCoverk);
+    emsolver(string slabel_, vector<vector<vector<complex<double> > > > mfc_,
+            vector<int> klmi_, vector<int> klpi_, vector<int> kci_,
+            vector<vector<double> > kp_,
+            vector<double> omg_, double delta_, 
+            vector<double> bathT_):
+            slabel(slabel_), mfc(mfc_), KLmInd(klmi_), KLpInd(klpi_), KCInd(kci_),
+            kp(kp_), omg(omg_), delta(delta_), bathT(bathT_){};
+    void vibProj(const vector<vector<vector<vector<complex<double> > > > >& d00rl, const vector<vector<vector<vector<complex<double> > > > >& d00rr);
+    void DRCC(vector<vector<vector<vector<complex<double> > > > >& dccr, 
+              vector<vector<complex<double> > >& VibTRCOverk,
+              vector<vector<vector<vector<complex<double> > > > >& SelfEngLeadL, 
+              vector<vector<vector<vector<complex<double> > > > >& SelfEngLeadR,
+              const vector<vector<vector<vector<complex<double> > > > >& d00rl, 
+              const vector<vector<vector<vector<complex<double> > > > >& d00rr);
+    
+    void writePhTRC(const string& strs, const vector<vector<complex<double> > >& vibTRCoverk);
+    void eigenMode();
 private:
-	vector<vector<vector<complex<double> > > > mfc;
-	vector<int> KLmInd;
-	vector<int> KLpInd;
-	vector<int> KCInd;
-	vector<vector<double> > kp;
-	vector<double> omg;
-	double delta;
-	vector<double> bathT;
+    string slabel;
+    vector<vector<vector<complex<double> > > > mfc;
+    vector<int> KLmInd;
+    vector<int> KLpInd;
+    vector<int> KCInd;
+    vector<vector<double> > kp;
+    vector<double> omg;
+    double delta;
+    vector<double> bathT;
 };
-
 
 #endif

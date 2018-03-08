@@ -56,7 +56,7 @@ iofc::iofc(string slabel_, bool isBulk_):slabel(slabel_), isBulk(isBulk_){
     fs.read((char*)xmassa, sizeof(int)*na);
     xmass = vector<int>(na, 1);
     copy(xmassa, xmassa + na, xmass.begin());
-    std::cout <<"retrieve xa, xmass: " << std::endl;
+    std::cout <<"ioFC: retrieve xa, xmass: " << std::endl;
     for(size_t i = 0; i < xa.size(); ++i){
         for(auto j : xa[i]) cout << j << "    ";
         std::cout << xmass[i] << std::endl;
@@ -74,7 +74,7 @@ iofc::iofc(string slabel_, bool isBulk_):slabel(slabel_), isBulk(isBulk_){
 //    fs.read((char*)&scell[0][0], sizeof(double)*9);
     fs.read(reinterpret_cast<char*>(scella), sizeof(scella));
     mcopy<double>((double*)scella, 3, 3, scell);
-    std::cout << "nsc, cell, scell"<< std::endl;
+    std::cout << "ioFC: nsc, cell, scell"<< std::endl;
     for(auto i : nsc) std::cout << i <<"    ";
     std::cout << std::endl;
     for(auto i : cell){
@@ -92,7 +92,7 @@ iofc::iofc(string slabel_, bool isBulk_):slabel(slabel_), isBulk(isBulk_){
     double kpa[nkp][4];
     fs.read(reinterpret_cast<char*>(kpa), sizeof(kpa));
     mcopy<double>((double*)kpa, nkp, 4, kp);
-    std::cout << "kp: " << std::endl;
+    std::cout << "ioFC: kp " << std::endl;
     for(auto i : kp){
         for(auto j : i) std::cout << j << "    ";
         std::cout << std::endl;
@@ -104,7 +104,7 @@ iofc::iofc(string slabel_, bool isBulk_):slabel(slabel_), isBulk(isBulk_){
     if(!isBulk){
         fs.read((char*)&ia1, sizeof(int));
         fs.read((char*)&ia2, sizeof(int));
-        std::cout << "ia1, ia2" << ia1 << "    "<< ia2 << std::endl;
+        std::cout << "ioFC: ia1, ia2 " << ia1 << "    "<< ia2 << std::endl;
     }
 
     fs.close();
@@ -215,7 +215,7 @@ void iofc::ReadFC(vector<vector<vector<complex<double> > > >& mfc){
     }// j
     ifs.close();
     //make force constant matrix hermitian.
-    std::cout << "Finish reading FC" << std::endl;
+//    std::cout << "Finish reading FC" << std::endl;
     for(int i = 0; i < na; i++){
         for(int j = 0; j < na; j++){
             for(int ii = 0; ii < 3; ii++){
@@ -299,7 +299,7 @@ void iofc::ReadFC(vector<vector<vector<complex<double> > > >& mfc){
             for(int j = 0; j < na; j++){
                 for(int lx = 0; lx < nsc[0]; lx++){
                 for(int ly = 0; ly < nsc[1]; ly++){
-    //            for(int lz = 0; lz < nsc[2]; lz++){
+                for(int lz = 0; lz < nsc[2]; lz++){
                     double r[3];
                     for(int ii = 0; ii < 3; ii++)
                         r[ii] = xa[i][ii] - xa[j][ii] +
@@ -344,29 +344,29 @@ void iofc::ReadFC(vector<vector<vector<complex<double> > > >& mfc){
                         for(int ii = 0; ii < 3; ii++){
                             for(int jj = 0; jj < 3; jj++){
                                 int ix = i*3+ii; 
-                                int jx = j*3+jj;
-                                mfc[k][ix][jx] += phi[ii][i][jj][j][lx][ly][(nsc[2]-1)/2]*
+                                int jx = (lz*na + j) * 3 + jj;
+                                mfc[k][ix][jx] += phi[ii][i][jj][j][lx][ly][lz]*
                                                   phase/complex<double>(neq, 0.0);
                             }
                         }
                     }
-            //    }// end lz
+                }// end lz
                 }//end ly
                 }// end lx
             }// end j
         }// end i
 
-        for(int ix = 0; ix < 3*na; ix++){
-            for(int jx = 0; jx < 3*na; jx++){
-                int i = ix/3.0;
-                int j = jx/3.0;
+        for(int ix = 0; ix < mfc[0].size(); ix++){
+            for(int jx = 0; jx < mfc[0][0].size(); jx++){
+                const size_t i = ix/3;
+                const size_t j = (jx / 3) % na;
                 mfc[k][ix][jx] /= sqrt(1.0*xmass[i]*xmass[j]);
             //    if(mfc[k][ix][jx].real() > 0.0) std::cout << "("<<i <<" " << j <<")"<< std::endl;
             }
         }
 //        std::cout << std::endl;
     }// end k
-    std::cout << "write FC into mfc." << std::endl;
+//    std::cout << "write FC into mfc." << std::endl;
 }
 
 struct floatlessthan{
@@ -382,31 +382,72 @@ struct floatlessthan{
  * 1.00000 : 4 5 6 7
  * ...
 */
-vector<vector<int> > iofc::MatCutbyLayer(){
-    map<double, vector<int>, floatlessthan> atlayers;
-    for(int i = 0; i < na; i++)
-    atlayers[xa[i][2]].push_back(i);
-    vector<vector<int> > res;
-    for(auto i = atlayers.begin(); i!= atlayers.end(); i++)
-    res.push_back(i->second);
+
+vector<vector<int> > iofc::MatCutbyLayer()
+{
+    const size_t nscz = nsc[2];
+    vector<vector<int> > res(2, vector<int>(na));
+   // if(nscz == 3){
+   //     std::iota(std::begin(res[0]), std::end(res[0]), na);
+   //     std::iota(std::begin(res[1]), std::end(res[1]), 2*na);
+   // }
+   if(nscz > 1 && (nscz % 2 == 1)){
+       std::iota(std::begin(res[0]), std::end(res[0]), (nscz - 1)/2*na);
+       std::iota(std::begin(res[1]), std::end(res[1]), (nscz + 1)/2*na);
+   }
+    else if(nscz == 1){
+        res[0].resize(na/2);
+        res[1].resize(na/2);
+        vector<std::pair<double, size_t> > ixa;
+        for(size_t i = 0; i < na; ++i){
+            ixa.push_back(std::make_pair(xa[i][2], i));
+        }
+        std::sort(ixa.begin(), ixa.end());
+        for(size_t i = 0; i < na/2; ++i){
+            res[0][i] = ixa[i].second;
+            res[1][i] = ixa[na / 2 + i].second;
+        }
+    //    std::iota(std::begin(res[0]), std::begin(res[0]) + na/2, 0);
+   //     std::iota(std::begin(res[1]), std::begin(res[1]) + na/2, na/2);
+    }
+    else{
+        std::cerr << "Wrong number of super cells." << std::endl;
+        abort();
+    }
     return res;
 }
+
+//vector<vector<int> > iofc::MatCutbyLayer(){
+//    map<double, vector<int>, floatlessthan> atlayers;
+//    for(int i = 0; i < na; i++)
+//    atlayers[xa[i][2]].push_back(i);
+//    vector<vector<int> > res;
+//    for(auto i = atlayers.begin(); i!= atlayers.end(); i++)
+//    res.push_back(i->second);
+//    return res;
+//}
 
 /*reconstruct lead FC matrix by layer*/
 void iofc::mfcSlice(vector<vector<vector<vector<vector<complex<double> > > > > >& mfcbylz, vector<vector<vector<complex<double> > > > mfc, vector<vector<int> > atominLayer)
 {
+//    std::cout <<"size of mfc: " << mfc.size() << " * " << mfc[0].size() << " * " << mfc[0][0].size() << std::endl;
 //    int na = xa.size(); // number of atoms
     int nk = mfc.size(); // number of 2d kpoints
-    int nl = mfcbylz[0].size(); // number of layers
+    int n1 = mfcbylz[0].size(); // number of layers
+    int n2 = mfcbylz[0][0].size(); // number of layers
+    std::cout << "ioFC: size of principal layer " << atominLayer.size() << std::endl;
 //    int napl = mfcbylz[0][0][0].size()/3; //number of atoms per layer
     for(int k = 0; k < nk; k++){
-        for(int lz1 = 0; lz1 < nl; lz1++){
+        for(int lz1 = 0; lz1 < n1; lz1++){
             auto aind1 = atominLayer[lz1];
-       //     std::cout << "index 1: ";
-       //     for(auto ia: aind1) std::cout << ia << " ";
-       //     std::cout << std::endl;
-            for(int lz2 = 0; lz2 < nl; lz2++){
+            std::cout << "index of 000 super cell: ";
+            for(auto ia: aind1) std::cout << ia << " ";
+            std::cout << std::endl;
+            for(int lz2 = 0; lz2 < n2; lz2++){
                 auto aind2 = atominLayer[lz2];
+                std::cout << "index of 001 super cell: ";
+                for(auto ia: aind2) std::cout << ia << " ";
+                std::cout << std::endl;
                 int c1 = -1;
                 for(auto i : aind1){
                     c1++;
@@ -415,7 +456,7 @@ void iofc::mfcSlice(vector<vector<vector<vector<vector<complex<double> > > > > >
                         c2++;
                         for(int ii = 0; ii < 3; ii++){
                             for(int jj = 0; jj < 3; jj++){
-                                mfcbylz[k][lz1][lz2][3*c1+ii][3*c2+jj] = mfc[k][3*i+ii][3*j+jj];
+                                mfcbylz[k][lz1][lz2][3*c1+ii][3*c2+jj] = mfc[k][(i % na) * 3 + ii][3*j+jj];
                             }
                         }
                     }
@@ -423,6 +464,7 @@ void iofc::mfcSlice(vector<vector<vector<vector<vector<complex<double> > > > > >
             }
         }
     }
+//    std::cout << "return from mfcSlice:\n";
 }
 
 /*Idenfity where's the EM area(KCInd) 
@@ -439,8 +481,8 @@ void iofc::setBoundary(double cllft, double clrt, int nlrt,
      * right interface to mol., 
      * right lead.
      * */
-    std::cout << "ia1, ia2: " << ia1 <<" "<<ia2 << std::endl;
-    std::cout << "xa.size() " << xa.size() << std::endl;
+//    std::cout << "ia1, ia2: " << ia1 <<" "<<ia2 << std::endl;
+//    std::cout << "xa.size() " << xa.size() << std::endl;
 //    std::cout << "xa[ia1][2], xa[ia2][2]: " << xa[ia1-1][2] <<" "<<xa[ia2-1][2] << std::endl;
     if((ia1 == 1) && (ia2 == na)){
         double Llftoutermost = cllft;
@@ -449,7 +491,7 @@ void iofc::setBoundary(double cllft, double clrt, int nlrt,
         double minxaz = xa[0][2];
         for(int i = 1; i < xa.size(); i++)
             if(minxaz > xa[i][2]) minxaz = xa[i][2] ; 
-        std::cout << "Llft, Lrt" << Llftoutermost + minxaz <<" "<<Lrtinnermost + minxaz << std::endl;
+        std::cout << "ioFC: Llft, Lrt " << Llftoutermost + minxaz <<" "<<Lrtinnermost + minxaz << std::endl;
         for(int i = 0; i < xa.size(); i++){
             double xar = xa[i][2] - minxaz;
             if((xar - Llftoutermost < -0.01) || (xar - Lrtinnermost) > 0.01) continue;
@@ -474,14 +516,40 @@ void iofc::setBoundary(double cllft, double clrt, int nlrt,
     }
 }
 
+void iofc::setBoundary(int naAtOnelayer_l, int naAtOnelayer_r, vector<int>& KLmInd, vector<int>& KLpInd, vector<int>& KCInd)
+{
+    /* ia1 = 1 and ia2 = na set the whole unit cell expanding molecule, 
+     * which must be cut into five areas:
+     * left lead, 
+     * left interface to mol., 
+     * mol., 
+     * right interface to mol., 
+     * right lead.
+     * */
+//    std::cout << "ia1, ia2: " << ia1 <<" "<<ia2 << std::endl;
+//    std::cout << "xa.size() " << xa.size() << std::endl;
+    for(size_t i = ia1; i <= ia2; ++i){
+        if(i < ia1 + naAtOnelayer_l){
+            KLmInd.push_back(i);
+        }
+        else if(i > ia2 - naAtOnelayer_r){
+            KLpInd.push_back(i);
+        }
+        else{
+            KCInd.push_back(i);
+        }
+    }
+}
+
 setleads::setleads(string ssl){
     fstream ifc(ssl, std::ios::in|std::ios::binary);
     double clz; // length of the unit cell along z;
     ifc.read((char*)&clz, sizeof(double));
     cellLz = clz;
-    int nly; // number of layers
+    //  int nly; // number of layers
+    int nly; // number of atoms at one layer
     ifc.read((char*)&nly, sizeof(int));
-    nlayers = nly;
+    naAtOnelayer = nly;
     std::cout << "setleads: clz, nlayers" << clz << " " << nly << std::endl; 
     int kpz1, kpz2;// size of k-points array n*2
     ifc.read((char*)&kpz1, sizeof(int));
